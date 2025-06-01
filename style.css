@@ -166,16 +166,26 @@
     background-color: #fff;
   }
   .social {
-    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 0;
+    flex-wrap: wrap;
   }
+  
   .social a {
-    color: var(--ocra);
-    margin: 0 10px;
-    font-size: 1.5rem;
-    transition: color 0.3s;
+    background-color: #d4a017;
+    color: #000;
+    padding: 10px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
   }
+  
   .social a:hover {
-    color: #fff;
+    background-color: #fff;
+    color: #000;
   }
   
   /* Footer */
