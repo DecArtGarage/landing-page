@@ -1,0 +1,204 @@
+/* Reset base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+    padding-bottom: 60px;
+  }
+ .logo img {
+  height: 150px;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+}
+
+  
+ header {
+  padding: 20px;
+  background-color: #000;
+}
+
+  
+  
+  /* Giallo ocra */
+  :root {
+    --ocra: #d4a017;
+  }
+  
+  /* Hero Section */
+  .hero {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url('src/Cerchi-e-pinze-freno-rosse-Alfa-Romeo.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 40px;
+  }
+  
+  .hero-content h1 {
+    font-size: 13.5rem;
+    color: var(--ocra);
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .hero-content p {
+    font-size: 1.3rem;
+    margin: 15px 0;
+  }
+  .cta {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--ocra);
+    color: #000;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  .cta:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Sezioni */
+  section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+  }
+  h2 {
+    color: var(--ocra);
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Card servizi */
+  .servizi .card {
+    display: flex;
+    background-color: #111;
+    margin: 20px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255,255,255,0.05);
+    transition: transform 0.3s;
+  }
+  .servizi .card:hover {
+    transform: scale(1.02);
+  }
+  .card-img {
+    width: 50%;
+    min-height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
+  .card-text {
+    width: 50%;
+    padding: 20px;
+    text-align: left;
+  }
+  .card-text h3 {
+    color: var(--ocra);
+    margin-bottom: 10px;
+  }
+  .card-text p {
+    font-size: 0.95rem;
+    color: #ccc;
+  }
+  
+  /* Immagini di sfondo */
+  .vetri {
+    background-image: url('src/Oscuramento-vetri-auto.png');
+  }
+  .fari {
+    background-image: url('src/acquista-il-servizio-di-ripristino-fari-opacizzati.jpg');
+  }
+  .wrapping {
+    background-image: url('src/wrapping-auto.jpg');
+  }
+  
+  /* Vantaggi */
+  .vantaggi ul {
+    list-style: none;
+    padding: 0;
+  }
+  .vantaggi li {
+    padding: 10px 0;
+    font-size: 1.1rem;
+    color: #ccc;
+  }
+  
+  /* Contatti */
+  .contatti form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .contatti input,
+  .contatti textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  .contatti button {
+    background-color: var(--ocra);
+    color: #000;
+    padding: 12px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background 0.3s;
+  }
+  .contatti button:hover {
+    background-color: #fff;
+  }
+  .social {
+    margin-top: 20px;
+  }
+  .social a {
+    color: var(--ocra);
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+  }
+  .social a:hover {
+    color: #fff;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: #666;
+    position: relative;
+  }
+  
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .servizi .card {
+      flex-direction: column;
+    }
+    .card-img,
+    .card-text {
+      width: 100%;
+    }
+    .card-text {
+      text-align: center;
+    }
+  }
+  
